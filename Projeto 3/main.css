@@ -58,3 +58,8 @@ body   {
 .social-links li a {
     text-decoration: none;
 }
+
+.error {
+    color: red;
+    margin-top: 8px;
+}

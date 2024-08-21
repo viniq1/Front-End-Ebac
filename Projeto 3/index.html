@@ -17,8 +17,11 @@
     <header class="navbar navbar-expand-lg sticky-top" id="cabecalho">
         <div class="container">
             <h1 class="navbar-brand m-0 section-title">Nome do Restaurante</h1>
-            <nav>
-                <ul class="nav nav-pills">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
                     <li class="nav-item">
                         <a href="#sobre-o-restaurante" class="nav-link">
                             <i class="bi bi-house-door me-1"></i>
@@ -48,18 +51,18 @@
         </div>
     </header>
 
-    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
         <section id="sobre-o-restaurante">
             <div class="carousel slide" data-bs-ride="carousel" id="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="2000">
-                        <img src="images/slides/slide1.png" alt="Espaço interno do restaurante">
+                        <img src="images/slides/slide1.png" class="w-100" alt="Espaço interno do restaurante">
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
-                        <img src="images/slides/slide2.png" alt="Taças de vinho">
+                        <img src="images/slides/slide2.png" class="w-100" alt="Taças de vinho">
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
-                        <img src="images/slides/slide3.png" alt="Buffet do restaurante">
+                        <img src="images/slides/slide3.png" class="w-100" alt="Buffet do restaurante">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -80,7 +83,7 @@
                         <div class="col-md-5">
                             <img src="images/restaurante.jpg" class="d-block w-100 rounded" alt="Imagem do restaurante">
                         </div>
-                        <div class="col-md-7">
+                        <div class="col-md-7 mt-3 mt-md-0">
                             <h2 class="section-title">Sobre <span>o restaurante</span></h2>
                             <p>
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda hic consequuntur magni ea? Nostrum ipsa optio, deserunt, porro laborum tenetur soluta, minus exercitationem veritatis maxime a cumque voluptatibus molestias illo.
@@ -363,7 +366,7 @@
                     <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
                 </div>
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-7 mb-5">
                         <form>
                             <div class="mb-3">
                                 <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
@@ -422,7 +425,11 @@
             </div>
         </section>
     </div>
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="JS/jquery.mask.min.js"></script>
+    <script src="JS/jquery.validate.min.js"></script>
+    <script src="JS/messages_pt_BR.min.js"></script>
+    <script src="JS/main.js"></script>
 </body>
 </html>
