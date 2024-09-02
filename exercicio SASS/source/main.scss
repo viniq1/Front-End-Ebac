@@ -2,25 +2,4 @@
 @use 'config/variaveis.scss';
 @use 'config/header.scss';
 @use 'config/section.scss';
-
-
-@media screen and (max-width: variaveis.$tablet) {
-    .container {
-        max-width: 80%;
-    }
-    
-    .products {
-        grid-template-columns: repeat(2, 48.5%);
-        column-gap: 3%;
-    }
-}
-
-@media screen and (max-width: variaveis.$mobile) {
-    .products {
-        display: block;
-    }
-
-    .product-item  {
-        margin-bottom: 32px;
-    }
-}
+@use 'config/media.scss';
